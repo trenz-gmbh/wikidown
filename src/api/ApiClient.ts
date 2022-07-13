@@ -22,13 +22,13 @@ export default class ApiClient {
         return this.baseUrl;
     }
 
-    private static buildHeaders() : HeadersInit {
+    private static buildHeaders(): HeadersInit {
         return {};
     }
 
-    private static convertToFormData(data: Record<string, string|Blob>): FormData {
+    private static convertToFormData(data: Record<string, string | Blob>): FormData {
         const form = new FormData();
-        const form_data: Record<string, string|Blob> = {};
+        const form_data: Record<string, string | Blob> = {};
 
         for (const key in data) {
             if (!Object.hasOwnProperty.call(data, key))

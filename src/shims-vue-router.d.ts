@@ -3,7 +3,7 @@ export {}
 import 'vue-router'
 
 declare module 'vue-router' {
-  interface RouteMeta {
-    title?: string;
-  }
+    interface RouteMeta {
+        title?: string;
+    }
 }

@@ -5,13 +5,13 @@ import 'vuetify/styles'
 // Vuetify
 import {createVuetify} from 'vuetify'
 
-import { en, de } from 'vuetify/locale'
+import {de, en} from 'vuetify/locale'
 
 export default createVuetify({
     locale: {
         defaultLocale: 'de',
         fallbackLocale: 'en',
-        messages: { en, de },
+        messages: {en, de},
     },
     defaults: {
         global: {

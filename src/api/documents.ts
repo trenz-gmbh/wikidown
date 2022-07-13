@@ -7,7 +7,7 @@ export default {
         return ApiClient.getJson('Documents/NavTree');
     },
 
-    async byLocation(location: string): Promise<IndexedFile|null> {
+    async byLocation(location: string): Promise<IndexedFile | null> {
         return ApiClient.getJson(`Documents/ByLocation/${location}`);
     }
 }

@@ -6,6 +6,6 @@ export interface State {
     navTree: NavTree;
     searchQuery: string;
     searchResults: Array<SearchResult>;
-    searchResultMessage: string|null;
+    searchResultMessage: string | null;
     documents: Map<string, IndexedFile>;
 }

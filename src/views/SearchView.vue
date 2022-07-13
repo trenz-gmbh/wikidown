@@ -3,7 +3,8 @@
     <v-col v-for="(item, i) of $store.state.searchResults" :key="i" :cols="12" :md="6" :lg="4">
       <v-card :to="'/wiki/' + item.location">
         <template #title>
-          <div style="direction: rtl; text-align: left; overflow: hidden; text-overflow: ellipsis;" v-html="item._formatted.location.replaceAll(/(\w)\/(\w)/gmi, '$1 / $2')">
+          <div style="direction: rtl; text-align: left; overflow: hidden; text-overflow: ellipsis;"
+               v-html="item._formatted.location.replaceAll(/(\w)\/(\w)/gmi, '$1 / $2')">
           </div>
         </template>
         <template #text>
